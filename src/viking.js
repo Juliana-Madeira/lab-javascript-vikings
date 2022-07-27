@@ -4,15 +4,14 @@ class Soldier {
     this.health = health;
     this.strength = strength;     
   }
-
+  
   attack(){
     return this.strength;
   };
-
+  
   receiveDamage(theDamage){
     this.health = this.health - theDamage;
   };
-
 }
 
 
@@ -22,7 +21,7 @@ class Viking extends Soldier{
     super(health,strength);
     this.name = name;
   };
-
+  
   receiveDamage(theDamage){
     super.receiveDamage(theDamage);
     if(this.health > 0){
@@ -34,7 +33,6 @@ class Viking extends Soldier{
   battleCry(){
     return "Odin Owns You All!";
   };
-
 };
 
 // Saxon
