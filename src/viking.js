@@ -6,7 +6,7 @@ class Soldier {
   }
 
   attack(){
-    return (this.strength);
+    return this.strength;
   };
 
   receiveDamage(theDamage){
@@ -26,13 +26,13 @@ class Viking extends Soldier{
   receiveDamage(theDamage){
     super.receiveDamage(theDamage);
     if(this.health > 0){
-      return (`${this.name} has received ${theDamage} points of damage`);
+      return `${this.name} has received ${theDamage} points of damage`;
     }
-    return (`${this.name} has died in act of combat`);
+    return `${this.name} has died in act of combat`;
   }
 
   battleCry(){
-    return ("Odin Owns You All!");
+    return "Odin Owns You All!";
   };
 
 };
