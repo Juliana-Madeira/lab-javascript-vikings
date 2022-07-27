@@ -23,10 +23,8 @@ class Viking extends Soldier{
     this.name = name;
   };
 
-
-
   receiveDamage(theDamage){
-    this.health = this.health - theDamage;
+    super.receiveDamage(theDamage);
     if(this.health > 0){
       return (`${this.name} has received ${theDamage} points of damage`);
     }
